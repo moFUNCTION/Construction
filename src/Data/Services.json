@@ -1,0 +1,158 @@
+[
+  {
+    "name": "Manpower Services",
+    "description": "Providing skilled and experienced professionals for various industrial operations.",
+    "image": "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "categories": [
+      {
+        "title": "Overview",
+        "items": [
+          {
+            "title": "Skilled Workforce",
+            "description": "Supplying trained and experienced professionals for industrial operations."
+          },
+          {
+            "title": "Industry Expertise",
+            "description": "Supporting diverse sectors, including Oil & Gas, infrastructure, and manufacturing."
+          },
+          {
+            "title": "Efficient Execution",
+            "description": "Ensuring high-quality results with a focus on operational excellence."
+          }
+        ]
+      },
+      {
+        "title": "Key Features",
+        "items": [
+          {
+            "title": "Customized Solutions",
+            "description": "Tailored manpower services to meet client requirements."
+          },
+          {
+            "title": "Safety Compliance",
+            "description": "Workforce trained in strict adherence to safety standards."
+          },
+          {
+            "title": "Specialized Support",
+            "description": "Expertise in plant operations, maintenance, and shutdowns."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Metallic & Non-Metallic Piping",
+    "description": "Providing comprehensive piping solutions tailored to client needs.",
+    "image": "https://images.pexels.com/photos/2569842/pexels-photo-2569842.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "categories": [
+      {
+        "title": "Services",
+        "items": [
+          {
+            "title": "Comprehensive Piping Services",
+            "description": "FRP/GRP, GRE/RTR, and HDPE piping and spools tailored to meet project specifications."
+          },
+          {
+            "title": "FRP Lining Works",
+            "description": "Providing FRP lining for enhanced durability, performance, and lifespan of piping systems."
+          },
+          {
+            "title": "Advanced Installation Methods",
+            "description": "Techniques including Coupling Joints, Lamination Joints, Flange-to-Flange Joints, and others."
+          }
+        ]
+      },
+      {
+        "title": "Materials",
+        "items": [
+          {
+            "description": "High-quality materials sourced from Amantit Group, Future Pipe Industries, and ACWA."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Equipment Rental Services",
+    "description": "Offering a wide range of certified equipment for industrial projects.",
+    "image": "https://images.pexels.com/photos/29502212/pexels-photo-29502212/free-photo-of-ace-16xw-crane-at-construction-site-in-faridabad.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "categories": [
+      {
+        "title": "Offerings",
+        "items": [
+          {
+            "title": "Construction and Lifting Equipment",
+            "description": "Available for hire across Saudi Arabia."
+          },
+          {
+            "title": "Specialized Shutdown Equipment",
+            "description": "Includes Buses, Coasters, Pick-up Trucks, and Hydro Jetting Equipment."
+          }
+        ]
+      },
+      {
+        "title": "Availability and Certification",
+        "items": [
+          {
+            "description": "Equipment can be rented with or without crew. Certified by Aramco for safety and reliability."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Safety & Personal Protection Accessories",
+    "description": "High-quality safety gear designed for hazardous environments.",
+    "image": "https://images.pexels.com/photos/8159/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "categories": [
+      {
+        "title": "Features",
+        "items": [
+          {
+            "description": "Includes helmets, gloves, goggles, protective clothing, high-visibility vests, and steel-toe boots."
+          }
+        ]
+      },
+      {
+        "title": "Applications and Quality Assurance",
+        "items": [
+          {
+            "description": "Ensuring worker safety and compliance with global safety standards using export-grade materials."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hydro Jetting Industrial Services",
+    "description": "Advanced hydro jetting solutions for industrial cleaning needs.",
+    "image": "https://images.pexels.com/photos/14651/pexels-photo-14651.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "categories": [
+      {
+        "title": "Expertise and Methods",
+        "items": [
+          {
+            "title": "Triple Lancing",
+            "description": "Provides exceptional cleaning efficiency with three high-pressure jets."
+          },
+          {
+            "title": "Flexi Lancing",
+            "description": "Adaptable for intricate pipeline navigation."
+          },
+          {
+            "title": "Rigid Lancing",
+            "description": "Maintains a steady, powerful stream for effective cleaning."
+          }
+        ]
+      },
+      {
+        "title": "Applications",
+        "items": [
+          {
+            "description": "Includes Heat Exchanger Cleaning, Tank Cleaning, Cooling Tower Cleaning, and more."
+          }
+        ]
+      }
+    ]
+  }
+]
