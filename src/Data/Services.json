@@ -316,13 +316,33 @@
   },
   {
     "name": {
-      "en": "Supplies",
-      "ar": "قسم التوريدات"
+      "en": "Supply of Equipment and Goods",
+      "ar": "توريد المعدات والبضائع"
     },
     "description": {
-      "en": "Offering a variety of supplies and materials for different industrial needs.",
-      "ar": "تقديم مجموعة متنوعة من الإمدادات والمواد لاحتياجات صناعية مختلفة."
+      "en": "Providing top-quality industrial equipment and a wide range of materials tailored to project requirements.",
+      "ar": "توفير معدات صناعية عالية الجودة ومجموعة واسعة من المواد المصممة لتلبية متطلبات المشاريع."
     },
-    "image": "https://firebasestorage.googleapis.com/v0/b/markets-system.appspot.com/o/Construction_Project%2F0ffa15c4-5108-49fa-83d1-18d3ac1ca16c.jpg?alt=media&token=a988ad03-b4d6-4d4b-b7f8-4f4d6be26ac3"
+    "image": "https://firebasestorage.googleapis.com/v0/b/markets-system.appspot.com/o/Construction_Project%2F0ffa15c4-5108-49fa-83d1-18d3ac1ca16c.jpg?alt=media&token=a988ad03-b4d6-4d4b-b7f8-4f4d6be26ac3",
+    "categories": [
+      {
+        "title": {
+          "en": "Supply of Equipment and Materials",
+          "ar": "توريد المعدات والمواد"
+        },
+        "items": [
+          {
+            "title": {
+              "en": "Trusted Suppliers",
+              "ar": "موردون موثوقون"
+            },
+            "description": {
+              "en": "Provides top-quality industrial equipment from trusted suppliers.",
+              "ar": "توفير معدات صناعية عالية الجودة من موردين موثوقين."
+            }
+          }
+        ]
+      }
+    ]
   }
 ]
