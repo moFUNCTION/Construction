@@ -145,6 +145,8 @@ export const Header = () => {
               sm: "sm",
             }}
             colorScheme="orange"
+            as={Link}
+            to="/contact"
           >
             {content("header.contactUs")}
           </Button>
