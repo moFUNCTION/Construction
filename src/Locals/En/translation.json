@@ -1,0 +1,197 @@
+{
+  "hero": {
+    "companyName": "Kayan & Makan Contracting Company",
+    "slogan": "Innovative and Reliable Industrial Solutions",
+    "buttonText": "Contact Us"
+  },
+  "header": {
+    "links": ["Home", "About Us", "Services", "Contact Us"],
+    "contactUs": "Contact Us"
+  },
+  "about": {
+    "sectionTitle": "About Us",
+    "intro": "At Kayan & Makan Contracting Company, we specialize in providing innovative and high-quality industrial services tailored to meet the needs of various industries. Established in Jubail, Saudi Arabia, we have built a reputation for excellence in plant construction, maintenance, and delivering superior equipment with professional dedication.",
+    "servicesTitle": "Our range of services includes:",
+    "services": [
+      {
+        "id": 1,
+        "title": "Project Management",
+        "description": "Ensuring seamless coordination from start to finish."
+      },
+      {
+        "id": 2,
+        "title": "Procurement",
+        "description": "Delivering top-quality materials and equipment."
+      },
+      {
+        "id": 3,
+        "title": "Fabrication",
+        "description": "Creating custom solutions to fit your project needs."
+      },
+      {
+        "id": 4,
+        "title": "Safety Materials",
+        "description": "Prioritizing the well-being of our workforce and clients."
+      }
+    ]
+  },
+  "vision": {
+    "sectionTitle": "Our Vision And Mission",
+    "visionTitle": "Vision",
+    "visionDescription": "To lead globally in providing innovative and sustainable industrial solutions through advanced technology and exceptional service.",
+    "missionTitle": "Mission",
+    "missionDescription": "Deliver high-quality, cost-effective, and integrated solutions, exceeding client expectations with a commitment to excellence and innovation."
+  },
+  "constructionAndProjectManagement": {
+    "sectionTitle": "Project Management",
+    "contents": [
+      {
+        "title": "Trusted in Saudi Arabia for Construction",
+        "description": "Renowned for delivering high-quality construction services across various sectors in Saudi Arabia, focusing on reliability and excellence.",
+        "image": "https://firebasestorage.googleapis.com/v0/b/markets-system.appspot.com/o/Construction_Project%2F9b9d1b09-a910-4b8e-8c30-885bf74792e4.jpg?alt=media&token=39060432-e9fa-4c76-a9fd-8073c5650dbe"
+      },
+      {
+        "title": "Timely Project Completion",
+        "description": "Committed to completing projects on time by employing innovative methods and utilizing premium materials for superior outcomes.",
+        "image": "https://firebasestorage.googleapis.com/v0/b/markets-system.appspot.com/o/Construction_Project%2F3bf72c9c-f34c-481c-a334-7727da7e98e9.jpg?alt=media&token=4d507a01-bfc9-453b-83ee-c65ffd5512f4"
+      },
+      {
+        "title": "Expert Design and Maintenance",
+        "description": "Offering expertise in design, execution, and maintenance with a strong emphasis on safety and sustainability to ensure project longevity.",
+        "image": "https://firebasestorage.googleapis.com/v0/b/markets-system.appspot.com/o/Construction_Project%2F0f63d903-6e6f-4427-98f1-92f59b7cf224.jpg?alt=media&token=94ad3604-8c94-4886-99db-75d1c859cfb1"
+      },
+      {
+        "title": "Comprehensive Engineering Services",
+        "description": "Providing comprehensive engineering and construction services tailored to industries such as Oil & Gas, Marine, and infrastructure.",
+        "image": "https://images.pexels.com/photos/159358/construction-site-build-construction-work-159358.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      }
+    ]
+  },
+  "projectSupportServices": {
+    "sectionTitle": "Project support Service",
+    "contents": [
+      {
+        "title": "Skilled Manpower for plant services"
+      },
+      {
+        "title": "Equipment Maintenance for optimal performance"
+      },
+      {
+        "title": "Bolt Torquing & Tensioning for precision installation"
+      },
+      {
+        "title": "Pipeline Projects for installation and maintenance"
+      },
+      {
+        "title": "Plant Shutdown Activities for minimal downtime"
+      },
+      {
+        "title": "Project Coordination for smooth execution"
+      },
+      {
+        "title": "Strategic Planning for successful delivery"
+      },
+      {
+        "title": "Timeline Management to ensure on-time completion"
+      },
+      {
+        "title": "Quality Assurance for high standards"
+      },
+      {
+        "title": "Health & Safety Compliance to ensure a safe work environment"
+      }
+    ]
+  },
+  "operationsAndMaintenanceServices": {
+    "heading": "Operations & Maintenance Services",
+    "services": [
+      {
+        "title": "Comprehensive Expertise",
+        "description": "Delivering a wide range of O&M solutions with proven expertise.",
+        "image": "https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "title": "Enhanced Efficiency",
+        "description": "Extending the life, functionality, and performance of structures and equipment.",
+        "image": "https://images.pexels.com/photos/271667/pexels-photo-271667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "title": "Advanced Techniques",
+        "description": "Employing the latest methods to ensure optimal operational outcomes.",
+        "image": "https://images.pexels.com/photos/1249611/pexels-photo-1249611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      }
+    ]
+  },
+  "fireProtectionServices": {
+    "heading": "Fire Protection Services",
+    "services": [
+      {
+        "title": "Expertise in evaluating fire and safety risks for industrial, commercial, and residential structures."
+      },
+      {
+        "title": "Premier supplier of high-quality fire and safety products."
+      },
+      {
+        "title": "Collaboration with global manufacturers to deliver reliable safety solutions."
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Contact Us",
+    "subheading": "Have a project in mind? Reach out to us today!",
+    "form": {
+      "namePlaceholder": "Your Name",
+      "emailPlaceholder": "Your Email",
+      "phonePlaceholder": "Phone Number",
+      "messagePlaceholder": "Your Message",
+      "submitButton": "Send Message"
+    },
+    "contactInfo": {
+      "heading": "Contact Information",
+      "items": [
+        {
+          "title": "Phone",
+          "content": "00966 566 876 524"
+        },
+        {
+          "title": "Whatsapp",
+          "content": "00966 535 114 112"
+        },
+        {
+          "title": "Address",
+          "content": "123 Construction Lane, City, State 12345"
+        },
+        {
+          "title": "Email",
+          "content": "info@kayanomakan.com"
+        },
+        {
+          "title": "Business Hours",
+          "content": "Mon-Fri: 8am - 6pm\nSat: 9am - 2pm"
+        }
+      ]
+    },
+    "mapPlaceholder": "Location Map Coming Soon"
+  },
+  "footer": {
+    "contact": {
+      "phone": "00966 566 876 524",
+      "email": "info@kayanomakan.com",
+      "address": "123 Construction Lane, Building City"
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "services": "Services",
+      "projects": "Projects",
+      "aboutUs": "About Us",
+      "contact": "Contact"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service",
+      "warranty": "Warranty"
+    },
+    "copyright": "© 2024 Kayan And Makan Construction. All Rights Reserved."
+  }
+}

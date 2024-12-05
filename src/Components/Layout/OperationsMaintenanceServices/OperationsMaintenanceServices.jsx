@@ -1,58 +1,13 @@
-import {
-  Flex,
-  Heading,
-  Stack,
-  Card,
-  CardBody,
-  CardFooter,
-  Divider,
-  Text,
-  ButtonGroup,
-  Button,
-} from "@chakra-ui/react";
+import { Flex, Heading, Stack } from "@chakra-ui/react";
 import { CenteredTextWithLines } from "../../Common/CenteredTextWithLines/CenteredTextWithLines";
 import { AnimatedText } from "../../../Components/Common/AnimatedText/AnimatedText";
-import { FaHardHat, FaTools, FaWrench, FaProjectDiagram } from "react-icons/fa";
-import { MdOutlinePrecisionManufacturing } from "react-icons/md";
-import { LazyLoadedImage } from "../../Common/LazyLoadedImage/LazyLoadedImage";
-import { ServiceBox } from "./Components/ServiceBox";
-const contents = [
-  {
-    title: "Comprehensive Expertise",
-    description: `Delivering a wide
-    range of O&M
-    solutions with proven
-    expertise.`,
-    icon: FaHardHat,
-    image:
-      "https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-  {
-    title: "Enhanced Efficiency",
-    description: `Extending the life,
-    functionality, and
-    performance of
-    structures and
-    equipment.`,
-    icon: FaTools,
-    image:
-      "https://images.pexels.com/photos/271667/pexels-photo-271667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-  {
-    title: "Advanced Techniques",
-    description: `
-        Employing the latest
-    methods to ensure
-    optimal operational
-    outcomes.
-        `,
-    icon: MdOutlinePrecisionManufacturing,
-    image:
-      "https://images.pexels.com/photos/1249611/pexels-photo-1249611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-];
-
+import { ServiceBox } from "../../Common/ServiceBox/ServiceBox";
+import { useTranslator } from "../../../Hooks/useTranslator/useTranslator";
 export const OpertationsAndMaintainceServices = () => {
+  const { content } = useTranslator();
+  const contents = content("operationsAndMaintenanceServices.services", {
+    returnObjects: true,
+  });
   return (
     <Stack
       w="100%"
@@ -74,7 +29,7 @@ export const OpertationsAndMaintainceServices = () => {
             maxW="100%"
             whiteSpace="wrap"
           >
-            Operations & Maintenance Services
+            {content("operationsAndMaintenanceServices.heading")}
           </Heading>
         </AnimatedText>
       </CenteredTextWithLines>

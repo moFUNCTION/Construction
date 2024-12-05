@@ -1,158 +1,328 @@
 [
   {
-    "name": "Manpower Services",
-    "description": "Providing skilled and experienced professionals for various industrial operations.",
-    "image": "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "name": {
+      "en": "Manpower Services",
+      "ar": "خدمات القوى العاملة"
+    },
+    "description": {
+      "en": "Providing skilled and experienced professionals for various industrial operations.",
+      "ar": "تقديم محترفين مهرة وذوي خبرة للعمليات الصناعية المتنوعة."
+    },
+    "image": "https://firebasestorage.googleapis.com/v0/b/markets-system.appspot.com/o/Construction_Project%2F7da640df-e6b1-4a00-8988-2bed795a8202.jpg?alt=media&token=1dcec94a-3a2d-4695-9978-2235ae09605a",
     "categories": [
       {
-        "title": "Overview",
+        "title": {
+          "en": "Overview",
+          "ar": "نظرة عامة"
+        },
         "items": [
           {
-            "title": "Skilled Workforce",
-            "description": "Supplying trained and experienced professionals for industrial operations."
+            "title": {
+              "en": "Skilled Workforce",
+              "ar": "قوة عاملة ماهرة"
+            },
+            "description": {
+              "en": "Supplying trained and experienced professionals for industrial operations.",
+              "ar": "توفير محترفين مدربين وذوي خبرة للعمليات الصناعية."
+            }
           },
           {
-            "title": "Industry Expertise",
-            "description": "Supporting diverse sectors, including Oil & Gas, infrastructure, and manufacturing."
+            "title": {
+              "en": "Industry Expertise",
+              "ar": "الخبرة في الصناعة"
+            },
+            "description": {
+              "en": "Supporting diverse sectors, including Oil & Gas, infrastructure, and manufacturing.",
+              "ar": "دعم القطاعات المتنوعة، بما في ذلك النفط والغاز والبنية التحتية والتصنيع."
+            }
           },
           {
-            "title": "Efficient Execution",
-            "description": "Ensuring high-quality results with a focus on operational excellence."
+            "title": {
+              "en": "Efficient Execution",
+              "ar": "تنفيذ فعال"
+            },
+            "description": {
+              "en": "Ensuring high-quality results with a focus on operational excellence.",
+              "ar": "ضمان نتائج عالية الجودة مع التركيز على التميز التشغيلي."
+            }
           }
         ]
       },
       {
-        "title": "Key Features",
+        "title": {
+          "en": "Key Features",
+          "ar": "الميزات الرئيسية"
+        },
         "items": [
           {
-            "title": "Customized Solutions",
-            "description": "Tailored manpower services to meet client requirements."
+            "title": {
+              "en": "Customized Solutions",
+              "ar": "حلول مخصصة"
+            },
+            "description": {
+              "en": "Tailored manpower services to meet client requirements.",
+              "ar": "خدمات القوى العاملة المخصصة لتلبية متطلبات العميل."
+            }
           },
           {
-            "title": "Safety Compliance",
-            "description": "Workforce trained in strict adherence to safety standards."
+            "title": {
+              "en": "Safety Compliance",
+              "ar": "الامتثال للسلامة"
+            },
+            "description": {
+              "en": "Workforce trained in strict adherence to safety standards.",
+              "ar": "قوة عاملة مدربة على الالتزام الصارم بمعايير السلامة."
+            }
           },
           {
-            "title": "Specialized Support",
-            "description": "Expertise in plant operations, maintenance, and shutdowns."
+            "title": {
+              "en": "Specialized Support",
+              "ar": "دعم متخصص"
+            },
+            "description": {
+              "en": "Expertise in plant operations, maintenance, and shutdowns.",
+              "ar": "الخبرة في عمليات المصانع والصيانة وإيقاف التشغيل."
+            }
           }
         ]
       }
     ]
   },
   {
-    "name": "Metallic & Non-Metallic Piping",
-    "description": "Providing comprehensive piping solutions tailored to client needs.",
-    "image": "https://images.pexels.com/photos/2569842/pexels-photo-2569842.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "name": {
+      "en": "Metallic & Non-Metallic Piping",
+      "ar": "أنابيب معدنية وغير معدنية"
+    },
+    "description": {
+      "en": "Providing comprehensive piping solutions tailored to client needs.",
+      "ar": "توفير حلول متكاملة للأنابيب مصممة حسب احتياجات العميل."
+    },
+    "image": "https://firebasestorage.googleapis.com/v0/b/markets-system.appspot.com/o/Construction_Project%2Ff9994987-dafb-45c8-ab46-27fb8909f5b5.jpg?alt=media&token=49c47f82-af33-46cd-9163-4fdc2604f2f1",
     "categories": [
       {
-        "title": "Services",
+        "title": {
+          "en": "Services",
+          "ar": "الخدمات"
+        },
         "items": [
           {
-            "title": "Comprehensive Piping Services",
-            "description": "FRP/GRP, GRE/RTR, and HDPE piping and spools tailored to meet project specifications."
+            "title": {
+              "en": "Comprehensive Piping Services",
+              "ar": "خدمات الأنابيب المتكاملة"
+            },
+            "description": {
+              "en": "FRP/GRP, GRE/RTR, and HDPE piping and spools tailored to meet project specifications.",
+              "ar": "أنابيب ومواسير FRP/GRP، GRE/RTR، و HDPE مصممة لتلبية مواصفات المشروع."
+            }
           },
           {
-            "title": "FRP Lining Works",
-            "description": "Providing FRP lining for enhanced durability, performance, and lifespan of piping systems."
+            "title": {
+              "en": "FRP Lining Works",
+              "ar": "أعمال تغليف FRP"
+            },
+            "description": {
+              "en": "Providing FRP lining for enhanced durability, performance, and lifespan of piping systems.",
+              "ar": "توفير تغليف FRP لتعزيز المتانة والأداء وعمر أنظمة الأنابيب."
+            }
           },
           {
-            "title": "Advanced Installation Methods",
-            "description": "Techniques including Coupling Joints, Lamination Joints, Flange-to-Flange Joints, and others."
+            "title": {
+              "en": "Advanced Installation Methods",
+              "ar": "طرق التثبيت المتقدمة"
+            },
+            "description": {
+              "en": "Techniques including Coupling Joints, Lamination Joints, Flange-to-Flange Joints, and others.",
+              "ar": "تقنيات تشمل الوصلات المزدوجة، الوصلات اللامينية، الوصلات بين الفلانشات، وغيرها."
+            }
           }
         ]
       },
       {
-        "title": "Materials",
+        "title": {
+          "en": "Materials",
+          "ar": "المواد"
+        },
         "items": [
           {
-            "description": "High-quality materials sourced from Amantit Group, Future Pipe Industries, and ACWA."
+            "description": {
+              "en": "High-quality materials sourced from Amantit Group, Future Pipe Industries, and ACWA.",
+              "ar": "مواد عالية الجودة من مجموعة أمانتات، صناعات المستقبل، و ACWA."
+            }
           }
         ]
       }
     ]
   },
   {
-    "name": "Equipment Rental Services",
-    "description": "Offering a wide range of certified equipment for industrial projects.",
-    "image": "https://images.pexels.com/photos/29502212/pexels-photo-29502212/free-photo-of-ace-16xw-crane-at-construction-site-in-faridabad.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "name": {
+      "en": "Equipment Rental Services",
+      "ar": "خدمات تأجير المعدات"
+    },
+    "description": {
+      "en": "Offering a wide range of certified equipment for industrial projects.",
+      "ar": "تقديم مجموعة واسعة من المعدات المعتمدة للمشاريع الصناعية."
+    },
+    "image": "https://firebasestorage.googleapis.com/v0/b/markets-system.appspot.com/o/Construction_Project%2F262f2ccd-fa32-446a-8307-2b6d1e1db382.jpg?alt=media&token=87be8818-a459-4e0e-aa8d-cd33d49b52aa",
     "categories": [
       {
-        "title": "Offerings",
+        "title": {
+          "en": "Offerings",
+          "ar": "العروض"
+        },
         "items": [
           {
-            "title": "Construction and Lifting Equipment",
-            "description": "Available for hire across Saudi Arabia."
+            "title": {
+              "en": "Construction and Lifting Equipment",
+              "ar": "معدات البناء والرفع"
+            },
+            "description": {
+              "en": "Available for hire across Saudi Arabia.",
+              "ar": "متاحة للإيجار في جميع أنحاء المملكة العربية السعودية."
+            }
           },
           {
-            "title": "Specialized Shutdown Equipment",
-            "description": "Includes Buses, Coasters, Pick-up Trucks, and Hydro Jetting Equipment."
+            "title": {
+              "en": "Specialized Shutdown Equipment",
+              "ar": "معدات الإغلاق المتخصصة"
+            },
+            "description": {
+              "en": "Includes Buses, Coasters, Pick-up Trucks, and Hydro Jetting Equipment.",
+              "ar": "تتضمن الحافلات، الحافلات الصغيرة، الشاحنات الصغيرة، ومعدات الهيدرو جيت."
+            }
           }
         ]
       },
       {
-        "title": "Availability and Certification",
+        "title": {
+          "en": "Availability and Certification",
+          "ar": "التوافر والشهادات"
+        },
         "items": [
           {
-            "description": "Equipment can be rented with or without crew. Certified by Aramco for safety and reliability."
+            "description": {
+              "en": "Equipment can be rented with or without crew. Certified by Aramco for safety and reliability.",
+              "ar": "يمكن استئجار المعدات مع أو بدون طاقم. معتمدة من أرامكو للسلامة والموثوقية."
+            }
           }
         ]
       }
     ]
   },
   {
-    "name": "Safety & Personal Protection Accessories",
-    "description": "High-quality safety gear designed for hazardous environments.",
-    "image": "https://images.pexels.com/photos/8159/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "name": {
+      "en": "Safety & Personal Protection Accessories",
+      "ar": "ملحقات الحماية والسلامة الشخصية"
+    },
+    "description": {
+      "en": "High-quality safety gear designed for hazardous environments.",
+      "ar": "معدات السلامة عالية الجودة مصممة للبيئات الخطرة."
+    },
+    "image": "https://firebasestorage.googleapis.com/v0/b/markets-system.appspot.com/o/Construction_Project%2F88ac2f81-8e62-4591-b2bf-142e233a4fd5.jpg?alt=media&token=49c91f58-124e-42ca-a07f-23d63694d5ab",
     "categories": [
       {
-        "title": "Features",
+        "title": {
+          "en": "Features",
+          "ar": "الميزات"
+        },
         "items": [
           {
-            "description": "Includes helmets, gloves, goggles, protective clothing, high-visibility vests, and steel-toe boots."
+            "description": {
+              "en": "Includes helmets, gloves, goggles, protective clothing, high-visibility vests, and steel-toe boots.",
+              "ar": "تشمل الخوذ، القفازات، النظارات الواقية، الملابس الواقية، السترات عالية الوضوح، والأحذية ذات الأصابع الفولاذية."
+            }
           }
         ]
       },
       {
-        "title": "Applications and Quality Assurance",
+        "title": {
+          "en": "Applications and Quality Assurance",
+          "ar": "التطبيقات وضمان الجودة"
+        },
         "items": [
           {
-            "description": "Ensuring worker safety and compliance with global safety standards using export-grade materials."
+            "description": {
+              "en": "Ensuring worker safety and compliance with global safety standards using export-grade materials.",
+              "ar": "ضمان سلامة العمال والامتثال للمعايير العالمية للسلامة باستخدام مواد من الدرجة التصدير."
+            }
           }
         ]
       }
     ]
   },
   {
-    "name": "Hydro Jetting Industrial Services",
-    "description": "Advanced hydro jetting solutions for industrial cleaning needs.",
-    "image": "https://images.pexels.com/photos/14651/pexels-photo-14651.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "name": {
+      "en": "Hydro Jetting Industrial Services",
+      "ar": "خدمات التنظيف بالضغط المائي"
+    },
+    "description": {
+      "en": "Advanced hydro jetting solutions for industrial cleaning needs.",
+      "ar": "حلول التنظيف بالضغط المائي المتقدمة لاحتياجات التنظيف الصناعي."
+    },
+    "image": "https://firebasestorage.googleapis.com/v0/b/markets-system.appspot.com/o/Construction_Project%2F862b1e9c-6032-4d2e-8bb6-129634148a0a.jpg?alt=media&token=599a8f25-34a2-4739-9127-886fae697e11",
     "categories": [
       {
-        "title": "Expertise and Methods",
+        "title": {
+          "en": "Expertise and Methods",
+          "ar": "الخبرة والأساليب"
+        },
         "items": [
           {
-            "title": "Triple Lancing",
-            "description": "Provides exceptional cleaning efficiency with three high-pressure jets."
+            "title": {
+              "en": "Triple Lancing",
+              "ar": "التنظيف الثلاثي"
+            },
+            "description": {
+              "en": "Provides exceptional cleaning efficiency with three high-pressure jets.",
+              "ar": "يوفر كفاءة تنظيف استثنائية باستخدام ثلاثة رؤوس ضغط عالي."
+            }
           },
           {
-            "title": "Flexi Lancing",
-            "description": "Adaptable for intricate pipeline navigation."
+            "title": {
+              "en": "Flexi Lancing",
+              "ar": "التنظيف المرن"
+            },
+            "description": {
+              "en": "Adaptable for intricate pipeline navigation.",
+              "ar": "قابل للتكيف مع التنقل في الأنابيب المعقدة."
+            }
           },
           {
-            "title": "Rigid Lancing",
-            "description": "Maintains a steady, powerful stream for effective cleaning."
+            "title": {
+              "en": "Rigid Lancing",
+              "ar": "التنظيف الصلب"
+            },
+            "description": {
+              "en": "Maintains a steady, powerful stream for effective cleaning.",
+              "ar": "يحتفظ بتدفق ثابت وقوي للتنظيف الفعال."
+            }
           }
         ]
       },
       {
-        "title": "Applications",
+        "title": {
+          "en": "Applications",
+          "ar": "التطبيقات"
+        },
         "items": [
           {
-            "description": "Includes Heat Exchanger Cleaning, Tank Cleaning, Cooling Tower Cleaning, and more."
+            "description": {
+              "en": "Includes Heat Exchanger Cleaning, Tank Cleaning, Cooling Tower Cleaning, and more.",
+              "ar": "يشمل تنظيف المبادلات الحرارية، تنظيف الخزانات، تنظيف أبراج التبريد، وأكثر."
+            }
           }
         ]
       }
     ]
+  },
+  {
+    "name": {
+      "en": "Supplies",
+      "ar": "قسم التوريدات"
+    },
+    "description": {
+      "en": "Offering a variety of supplies and materials for different industrial needs.",
+      "ar": "تقديم مجموعة متنوعة من الإمدادات والمواد لاحتياجات صناعية مختلفة."
+    },
+    "image": "https://firebasestorage.googleapis.com/v0/b/markets-system.appspot.com/o/Construction_Project%2F0ffa15c4-5108-49fa-83d1-18d3ac1ca16c.jpg?alt=media&token=a988ad03-b4d6-4d4b-b7f8-4f4d6be26ac3"
   }
 ]

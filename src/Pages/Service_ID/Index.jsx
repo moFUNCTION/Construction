@@ -14,10 +14,11 @@ import { useParams } from "react-router-dom";
 import { AnimatedText } from "../../Components/Common/AnimatedText/AnimatedText";
 import { CenteredTextWithLines } from "../../Components/Common/CenteredTextWithLines/CenteredTextWithLines";
 import { Contact } from "../../Components/Layout/Contact/Contact";
+import { useTranslator } from "../../Hooks/useTranslator/useTranslator";
 export default function Index() {
+  const { currentLanguage } = useTranslator();
   const { id } = useParams();
   const Content = Data[id];
-  console.log(Content);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -45,18 +46,23 @@ export default function Index() {
           />
           <AnimatedText isCentered spacing="5px">
             <Heading size="2xl" color="white">
-              {Content.name}
+              {Content.name[currentLanguage]}
             </Heading>
           </AnimatedText>
           <AnimatedText isCentered spacing="5px">
             <Heading size="md" color="white">
-              {Content.description}
+              {Content.description[currentLanguage]}
             </Heading>
           </AnimatedText>
         </Stack>
-        {Content.categories.map((category) => {
+        {Content.categories?.map((category) => {
           return (
-            <Stack gap="10" key={category.title} alignItems="center" p="4">
+            <Stack
+              gap="10"
+              key={category.title[currentLanguage]}
+              alignItems="center"
+              p="4"
+            >
               <CenteredTextWithLines w="100%" maxW="1200px">
                 <AnimatedText isCentered spacing="10px">
                   <Heading
@@ -67,12 +73,12 @@ export default function Index() {
                     maxW="100%"
                     whiteSpace="wrap"
                   >
-                    {category.title}
+                    {category.title[currentLanguage]}
                   </Heading>
                 </AnimatedText>
               </CenteredTextWithLines>
               <Flex wrap="wrap" justifyContent="center" gap="8" w="100%">
-                {category.items?.map((item, index) => {
+                {category?.items?.map((item, index) => {
                   return (
                     <Box
                       w="100%"
@@ -96,9 +102,11 @@ export default function Index() {
                     >
                       <AnimatedText isCentered spacing="4px">
                         <Heading mb="3" size="lg">
-                          {item.title}
+                          {item.title && item.title[currentLanguage]}
                         </Heading>
-                        <Text size="md">{item.description}</Text>
+                        <Text size="md">
+                          {item.description[currentLanguage]}
+                        </Text>
                       </AnimatedText>
                     </Box>
                   );

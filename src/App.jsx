@@ -1,7 +1,7 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import { Header } from "./Components/Layout/Header/Header";
-import { lazy } from "react";
+import { lazy, useEffect } from "react";
 import { LazyPageWrapper } from "./Components/Common/LazyPageWrapper/LazyPageWrapper";
 import { Footer } from "./Components/Layout/Footer/Footer";
 const Landing = lazy(() => import("./Pages/Landing/Index"));
@@ -11,6 +11,10 @@ const About = lazy(() => import("./Pages/About/Index"));
 const Contact = lazy(() => import("./Pages/Contact/Index"));
 const Vision = lazy(() => import("./Pages/Vision/Vision"));
 function App() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <>
       <Header />

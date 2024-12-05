@@ -45,6 +45,7 @@ export const LazyLoadedImage = ({ src, filter, ImageProps, ...rest }) => {
           width: "100%",
           height: "100%",
           ...ImageProps,
+          objectFit: "cover",
         }}
         loading="lazy"
         decoding="async"

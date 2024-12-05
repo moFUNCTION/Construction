@@ -1,5 +1,5 @@
 import { Box, Flex, Heading, IconButton, Stack } from "@chakra-ui/react";
-import React from "react";
+import React, { useMemo } from "react";
 import { motion, transform } from "framer-motion";
 import { CenteredTextWithLines } from "../../Common/CenteredTextWithLines/CenteredTextWithLines";
 import { AnimatedText } from "../../../Components/Common/AnimatedText/AnimatedText";
@@ -11,51 +11,52 @@ import {
   MdOutlinePrecisionManufacturing,
   MdOutlinePlumbing,
 } from "react-icons/md";
-
-const contents = [
+import { useTranslator } from "../../../Hooks/useTranslator/useTranslator";
+import { LazyLoadedImage } from "../../Common/LazyLoadedImage/LazyLoadedImage";
+import BackgroundImage from "../../../Assets/ProjectSupportServices/image.jpg";
+const icons = [
   {
-    title: "Skilled Manpower for plant services",
     icon: FaHardHat,
   },
   {
-    title: "Equipment Maintenance for optimal performance",
     icon: FaTools,
   },
   {
-    title: "Bolt Torquing & Tensioning for precision installation",
     icon: MdOutlinePrecisionManufacturing,
   },
   {
-    title: "Pipeline Projects for installation and maintenance",
     icon: MdOutlinePlumbing,
   },
   {
-    title: "Plant Shutdown Activities for minimal downtime",
     icon: FaProjectDiagram,
   },
   {
-    title: "Project Coordination for smooth execution",
     icon: FaProjectDiagram,
   },
   {
-    title: "Strategic Planning for successful delivery",
     icon: BsCalendarCheck,
   },
   {
-    title: "Timeline Management to ensure on-time completion",
     icon: BsCalendarCheck,
   },
   {
-    title: "Quality Assurance for high standards",
     icon: BsShieldCheck,
   },
   {
-    title: "Health & Safety Compliance to ensure a safe work environment",
     icon: AiOutlineSafetyCertificate,
   },
 ];
 
 export const ProjectSupportServices = () => {
+  const { content, currentLanguage } = useTranslator();
+  const contentsWithoutIcons = content("projectSupportServices.contents", {
+    returnObjects: true,
+  });
+  const contents = useMemo(() => {
+    return contentsWithoutIcons.map((content, index) => {
+      return { ...content, icon: icons[index].icon };
+    });
+  }, [currentLanguage]);
   return (
     <Stack
       w="100%"
@@ -63,7 +64,25 @@ export const ProjectSupportServices = () => {
       alignItems="center"
       px={[4, 6, 8]}
       py={[8, 10, 12]}
+      pos="relative"
+      bgColor="black"
+      zIndex="1"
     >
+      <LazyLoadedImage
+        transition="0.3s"
+        src={BackgroundImage}
+        w="100%"
+        pos="absolute"
+        h="100%"
+        inset="0"
+        ImageProps={{
+          objectFit: "cover",
+          filter: "saturate(0.6)",
+          opacity: 0.3,
+        }}
+        zIndex="-1"
+      />
+      {/* <LazyLoadedImage src={}  /> */}
       <CenteredTextWithLines w="100%" maxW="1200px">
         <AnimatedText isCentered spacing="10px">
           <Heading
@@ -71,13 +90,13 @@ export const ProjectSupportServices = () => {
               base: "lg",
               lg: "2xl",
             }}
-            color="orange.600"
+            color="white"
             textAlign="center"
             flexShrink="0"
             maxW="100%"
             whiteSpace="wrap"
           >
-            Project support Service
+            {content("projectSupportServices.sectionTitle")}
           </Heading>
         </AnimatedText>
       </CenteredTextWithLines>
@@ -87,18 +106,18 @@ export const ProjectSupportServices = () => {
           return (
             <Box
               w="100%"
-              maxW="600px"
+              maxW="400px"
               p="4"
               boxShadow="lg"
               borderRadius="lg"
               border="2px"
               borderColor="gray.300"
               key={index}
-              color="orange.700"
+              color="white"
               _hover={{
                 transform: "scale(1.05)",
-                bgColor: "orange.600",
-                color: "white",
+                bgColor: "white",
+                color: "black",
                 ".btn": {
                   bgColor: "white",
                 },
@@ -109,7 +128,7 @@ export const ProjectSupportServices = () => {
               <IconButton
                 ml="auto"
                 className="btn"
-                colorScheme="orange"
+                colorScheme="white"
                 variant="outline"
                 mb="4"
               >

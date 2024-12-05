@@ -3,10 +3,11 @@ import React from "react";
 import { CenteredTextWithLines } from "../../Common/CenteredTextWithLines/CenteredTextWithLines";
 import { AnimatedText } from "../../Common/AnimatedText/AnimatedText";
 import Data from "../../../Data/Services.json";
-import { ServiceBox } from "../OperationsMaintenanceServices/Components/ServiceBox";
+import { ServiceBox } from "../../Common/ServiceBox/ServiceBox";
 import { Link } from "react-router-dom";
+import { useTranslator } from "../../../Hooks/useTranslator/useTranslator";
 export const Services = () => {
-  console.log(Data);
+  const { currentLanguage } = useTranslator();
   return (
     <Stack
       w="100%"
@@ -28,7 +29,7 @@ export const Services = () => {
             maxW="100%"
             whiteSpace="wrap"
           >
-            Services
+            {currentLanguage === "ar" ? "الخدمات" : "Services"}
           </Heading>
         </AnimatedText>
       </CenteredTextWithLines>
@@ -37,23 +38,12 @@ export const Services = () => {
           return (
             <ServiceBox
               key={index}
-              title={content.name}
-              description={content.description}
+              title={content.name[currentLanguage]}
+              description={content.description[currentLanguage]}
               image={content.image}
-            >
-              <ButtonGroup>
-                <Button
-                  as={Link}
-                  to={`/Services/${index}`}
-                  colorScheme="orange"
-                >
-                  View More
-                </Button>
-                <Button variant="outline" colorScheme="orange">
-                  Contact Us
-                </Button>
-              </ButtonGroup>
-            </ServiceBox>
+              hasViewPage={true}
+              ViewMoreHref={`/Services/${index}`}
+            />
           );
         })}
       </Flex>

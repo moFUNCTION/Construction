@@ -1,0 +1,196 @@
+{
+  "hero": {
+    "companyName": "شركة كيان ومكان للمقاولات",
+    "slogan": "حلول صناعية مبتكرة وموثوقة",
+    "buttonText": "اتصل بنا"
+  },
+  "header": {
+    "contactUs": "اتصل بنا"
+  },
+  "about": {
+    "sectionTitle": "من نحن",
+    "intro": "في شركة كيان ومكان للمقاولات، نحن متخصصون في تقديم خدمات صناعية مبتكرة وعالية الجودة تلبي احتياجات مختلف الصناعات. تأسست في الجبيل، المملكة العربية السعودية، وحققنا سمعة متميزة في بناء المصانع وصيانتها وتقديم معدات عالية الجودة باحترافية.",
+    "servicesTitle": "تشمل خدماتنا:",
+    "services": [
+      {
+        "id": 1,
+        "title": "إدارة المشاريع",
+        "description": "ضمان التنسيق السلس من البداية إلى النهاية."
+      },
+      {
+        "id": 2,
+        "title": "المشتريات",
+        "description": "توفير المواد والمعدات عالية الجودة."
+      },
+      {
+        "id": 3,
+        "title": "التصنيع",
+        "description": "إنشاء حلول مخصصة لتلبية احتياجات المشروع."
+      },
+      {
+        "id": 4,
+        "title": "مواد السلامة",
+        "description": "إعطاء الأولوية لسلامة فريق العمل والعملاء."
+      }
+    ]
+  },
+  "vision": {
+    "sectionTitle": "رؤيتنا ورسالتنا",
+    "visionTitle": "الرؤية",
+    "visionDescription": "الريادة عالميًا في تقديم حلول صناعية مبتكرة ومستدامة من خلال التكنولوجيا المتقدمة والخدمة المتميزة.",
+    "missionTitle": "الرسالة",
+    "missionDescription": "تقديم حلول عالية الجودة وفعالة من حيث التكلفة ومتكاملة، مع تجاوز توقعات العملاء والالتزام بالتميز والابتكار."
+  },
+  "constructionAndProjectManagement": {
+    "sectionTitle": "إدارة المشاريع",
+    "contents": [
+      {
+        "title": "موثوق في السعودية للبناء",
+        "description": "مشهور بتقديم خدمات بناء عالية الجودة عبر مختلف القطاعات في السعودية مع التركيز على الموثوقية والتميز.",
+        "image": "https://firebasestorage.googleapis.com/v0/b/markets-system.appspot.com/o/Construction_Project%2F9b9d1b09-a910-4b8e-8c30-885bf74792e4.jpg?alt=media&token=39060432-e9fa-4c76-a9fd-8073c5650dbe"
+      },
+      {
+        "title": "إكمال المشاريع في الوقت المحدد",
+        "description": "ملتزمون بإكمال المشاريع في الوقت المحدد باستخدام أساليب مبتكرة والاستفادة من مواد متميزة لتحقيق نتائج متفوقة.",
+        "image": "https://firebasestorage.googleapis.com/v0/b/markets-system.appspot.com/o/Construction_Project%2F3bf72c9c-f34c-481c-a334-7727da7e98e9.jpg?alt=media&token=4d507a01-bfc9-453b-83ee-c65ffd5512f4"
+      },
+      {
+        "title": "تصميم وصيانة الخبراء",
+        "description": "تقديم خبرة في التصميم والتنفيذ والصيانة مع التركيز على السلامة والاستدامة لضمان طول عمر المشاريع.",
+        "image": "https://firebasestorage.googleapis.com/v0/b/markets-system.appspot.com/o/Construction_Project%2F0f63d903-6e6f-4427-98f1-92f59b7cf224.jpg?alt=media&token=94ad3604-8c94-4886-99db-75d1c859cfb1"
+      },
+      {
+        "title": "خدمات هندسية شاملة",
+        "description": "تقديم خدمات هندسية وبنائية شاملة مخصصة لصناعات مثل النفط والغاز، والبحرية، والبنية التحتية.",
+        "image": "https://images.pexels.com/photos/159358/construction-site-build-construction-work-159358.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      }
+    ]
+  },
+  "projectSupportServices": {
+    "sectionTitle": "خدمات دعم المشروع",
+    "contents": [
+      {
+        "title": "العمالة الماهرة لخدمات المنشآت"
+      },
+      {
+        "title": "صيانة المعدات للأداء الأمثل"
+      },
+      {
+        "title": "ربط وتوتير البراغي للتثبيت الدقيق"
+      },
+      {
+        "title": "مشاريع خطوط الأنابيب للتثبيت والصيانة"
+      },
+      {
+        "title": "أنشطة إيقاف التشغيل للحد الأدنى من التوقف"
+      },
+      {
+        "title": "تنسيق المشاريع لتنفيذ سلس"
+      },
+      {
+        "title": "التخطيط الاستراتيجي للتسليم الناجح"
+      },
+      {
+        "title": "إدارة الجدول الزمني لضمان إتمامه في الوقت المحدد"
+      },
+      {
+        "title": "ضمان الجودة للمعايير العالية"
+      },
+      {
+        "title": "الامتثال للصحة والسلامة لضمان بيئة عمل آمنة"
+      }
+    ]
+  },
+  "operationsAndMaintenanceServices": {
+    "heading": "خدمات التشغيل والصيانة",
+    "services": [
+      {
+        "title": "خبرة شاملة",
+        "description": "تقديم مجموعة واسعة من حلول التشغيل والصيانة مع خبرة مثبتة.",
+        "image": "https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "title": "كفاءة محسنة",
+        "description": "تمديد عمر ووظائف وأداء الهياكل والمعدات.",
+        "image": "https://images.pexels.com/photos/271667/pexels-photo-271667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "title": "تقنيات متقدمة",
+        "description": "استخدام أحدث الطرق لضمان نتائج تشغيلية مثلى.",
+        "image": "https://images.pexels.com/photos/1249611/pexels-photo-1249611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      }
+    ]
+  },
+  "fireProtectionServices": {
+    "heading": "خدمات الحماية من الحرائق",
+    "services": [
+      {
+        "title": "الخبرة في تقييم مخاطر الحرائق والسلامة للهياكل الصناعية والتجارية والسكنية."
+      },
+      {
+        "title": "المورد الرائد لمنتجات الحماية من الحرائق والسلامة عالية الجودة."
+      },
+      {
+        "title": "التعاون مع الشركات المصنعة العالمية لتقديم حلول موثوقة للسلامة."
+      }
+    ]
+  },
+  "contact": {
+    "heading": "تواصل معنا",
+    "subheading": "هل لديك مشروع في ذهنك؟ تواصل معنا اليوم!",
+    "form": {
+      "namePlaceholder": "اسمك",
+      "emailPlaceholder": "بريدك الإلكتروني",
+      "phonePlaceholder": "رقم الهاتف",
+      "messagePlaceholder": "رسالتك",
+      "submitButton": "إرسال الرسالة"
+    },
+    "contactInfo": {
+      "heading": "معلومات الاتصال",
+      "items": [
+        {
+          "title": "الهاتف",
+          "content": "00966 566 876 524"
+        },
+        {
+          "title": "واتساب",
+          "content": "00966 535 114 112"
+        },
+        {
+          "title": "العنوان",
+          "content": "123 شارع البناء، المدينة، الدولة 12345"
+        },
+        {
+          "title": "البريد الإلكتروني",
+          "content": "info@kayanomakan.com"
+        },
+        {
+          "title": "ساعات العمل",
+          "content": "من الاثنين إلى الجمعة: 8 صباحًا - 6 مساءً\nالسبت: 9 صباحًا - 2 مساءً"
+        }
+      ]
+    },
+    "mapPlaceholder": "خريطة الموقع قادمة قريبًا"
+  },
+  "footer": {
+    "contact": {
+      "phone": "00966 566 876 524",
+      "email": "info@kayanomakan.com",
+      "address": "123 شارع البناء، مدينة البناء"
+    },
+    "quickLinks": {
+      "title": "روابط سريعة",
+      "services": "الخدمات",
+      "projects": "المشاريع",
+      "aboutUs": "عنا",
+      "contact": "اتصل بنا"
+    },
+    "legal": {
+      "title": "قانوني",
+      "privacyPolicy": "سياسة الخصوصية",
+      "termsOfService": "شروط الخدمة",
+      "warranty": "الضمان"
+    },
+    "copyright": "© 2024 كيان ومكان للبناء. جميع الحقوق محفوظة."
+  }
+}

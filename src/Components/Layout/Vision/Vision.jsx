@@ -10,6 +10,7 @@ import LogoImage from "../../../Assets/Logo/Logo2.png";
 // Asset Imports
 import VisionImage from "../../../Assets/Vision/Vision.jpg";
 import { ScrollParallaxWrapper } from "../../Common/ParrallexWrapper/ParrellexWrapper";
+import { useTranslator } from "../../../Hooks/useTranslator/useTranslator";
 
 // Framer Motion wrappers
 const MotionBox = motion(Box);
@@ -67,31 +68,9 @@ const ParallaxImage = ({ src, ...props }) => {
   );
 };
 
-const services = [
-  {
-    id: 1,
-    title: "Project Management",
-    description: "Ensuring seamless coordination from start to finish.",
-  },
-  {
-    id: 2,
-    title: "Procurement",
-    description: "Delivering top-quality materials and equipment.",
-  },
-  {
-    id: 3,
-    title: "Fabrication",
-    description: "Creating custom solutions to fit your project needs.",
-  },
-  {
-    id: 4,
-    title: "Safety Materials",
-    description: "Prioritizing the well-being of our workforce and clients.",
-  },
-];
-
 // Main About Component
 export const Vision = () => {
+  const { content } = useTranslator();
   return (
     <Stack gap="20" alignItems="center" px={[4, 6, 8]} py={[8, 10, 12]}>
       {/* Section Title */}
@@ -106,7 +85,7 @@ export const Vision = () => {
             textAlign="center"
             flexShrink="0"
           >
-            Our Vision And Mission
+            {content("vision.sectionTitle")}
           </Heading>
         </AnimatedText>
       </CenteredTextWithLines>
@@ -118,31 +97,27 @@ export const Vision = () => {
         justifyContent="center"
         alignItems="center"
       >
-        <ParallaxImage src={VisionImage} maxW="500px" width="100%" />
+        <ParallaxImage src={VisionImage} maxW="500px" h="670px" width="100%" />
         <Stack gap="4" maxW="600px">
           <AnimatedText spacing="5px">
             <Heading color="orange.700" size="xl">
-              Vision
+              {content("vision.visionTitle")}
             </Heading>
           </AnimatedText>
           <AnimatedText>
             <Text color="orange.800">
-              To lead globally in providing innovative and sustainable
-              industrial solutions through advanced technology and exceptional
-              service.
+              {content("vision.visionDescription")}
             </Text>
           </AnimatedText>
           <Divider />
           <AnimatedText spacing="5px">
             <Heading color="orange.700" size="xl">
-              Mission
+              {content("vision.missionTitle")}
             </Heading>
           </AnimatedText>
           <AnimatedText>
             <Text color="orange.800">
-              Deliver high-quality, cost-effective, and integrated solutions,
-              exceeding client expectations with a commitment to excellence and
-              innovation.
+              {content("vision.missionDescription")}
             </Text>
           </AnimatedText>
         </Stack>

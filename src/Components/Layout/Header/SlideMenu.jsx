@@ -11,19 +11,39 @@ import {
   Heading,
   Stack,
   Flex,
+  IconButton,
 } from "@chakra-ui/react";
 import { Links } from "./Links";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { Logo } from "../../Common/Logo/Logo";
-
+import { useTranslator } from "../../../Hooks/useTranslator/useTranslator";
+import { CgClose } from "react-icons/cg";
 export const SlideMenu = ({ isOpen, onClose }) => {
+  const { currentLanguage } = useTranslator();
   return (
-    <Drawer size="md" isOpen={isOpen} placement="left" onClose={onClose}>
+    <Drawer
+      size="md"
+      isOpen={isOpen}
+      placement={currentLanguage === "ar" ? "right" : "left"}
+      onClose={onClose}
+    >
       <DrawerOverlay />
       <DrawerContent>
-        <DrawerCloseButton />
-        <DrawerHeader>Menu</DrawerHeader>
+        <IconButton
+          onClick={onClose}
+          size="sm"
+          variant="ghost"
+          pos="absolute"
+          top="2"
+          left={currentLanguage === "ar" && "2"}
+          right={currentLanguage === "en" && "2"}
+        >
+          <CgClose />
+        </IconButton>
+        <DrawerHeader>
+          {currentLanguage === "ar" ? "القائمة" : "menu"}
+        </DrawerHeader>
 
         <DrawerBody overflow="auto" as={Stack} justifyContent="center" gap="3">
           {Links.map((link, index) => {
@@ -36,6 +56,7 @@ export const SlideMenu = ({ isOpen, onClose }) => {
                 color="orange.600"
                 as={Link}
                 to={link.href}
+                onClick={onClose}
                 _hover={{
                   h3: {
                     mr: "15px",
@@ -49,17 +70,17 @@ export const SlideMenu = ({ isOpen, onClose }) => {
                   size="lg"
                   p="2"
                 >
-                  {link.title}
+                  {currentLanguage === "ar" ? link.title.ar : link.title.en}
                 </Heading>
-                <BsArrowRight style={{ fontSize: "20px" }} />
+                {currentLanguage === "ar" ? (
+                  <BsArrowLeft style={{ fontSize: "20px" }} />
+                ) : (
+                  <BsArrowRight style={{ fontSize: "20px" }} />
+                )}
               </Flex>
             );
           })}
         </DrawerBody>
-
-        <DrawerFooter flexWrap="wrap" justifyContent="start" gap="2">
-          <Button colorScheme="orange">Contact Us</Button>
-        </DrawerFooter>
       </DrawerContent>
     </Drawer>
   );

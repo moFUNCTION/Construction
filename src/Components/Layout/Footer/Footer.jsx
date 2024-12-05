@@ -11,8 +11,11 @@ import {
 } from "@chakra-ui/react";
 import { MdEmail, MdGpsFixed, MdPhone } from "react-icons/md";
 import { Logo } from "../../Common/Logo/Logo";
+import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <Box
       bg="gray.50"
@@ -31,38 +34,38 @@ export const Footer = () => {
             <Logo />
             <HStack spacing={2}>
               <MdPhone size={20} />
-              <Text>00966 566 876 524</Text>
+              <Text>{t("footer.contact.phone")}</Text>
             </HStack>
             <HStack spacing={2}>
               <MdEmail size={20} />
-              <Text>info@kayanomakan.com</Text>
+              <Text>{t("footer.contact.email")}</Text>
             </HStack>
             <HStack spacing={2}>
               <MdGpsFixed size={20} />
-              <Text>123 Construction Lane, Building City</Text>
+              <Text>{t("footer.contact.address")}</Text>
             </HStack>
           </VStack>
 
           <VStack align="start" spacing={4} flex={1}>
             <Text fontWeight="bold" fontSize="lg">
-              Quick Links
+              {t("footer.quickLinks.title")}
             </Text>
             <VStack align="start" spacing={2}>
-              <Link href="#">Services</Link>
-              <Link href="#">Projects</Link>
-              <Link href="#">About Us</Link>
-              <Link href="#">Contact</Link>
+              <Link href="#">{t("footer.quickLinks.services")}</Link>
+              <Link href="#">{t("footer.quickLinks.projects")}</Link>
+              <Link href="#">{t("footer.quickLinks.aboutUs")}</Link>
+              <Link href="#">{t("footer.quickLinks.contact")}</Link>
             </VStack>
           </VStack>
 
           <VStack align="start" spacing={4} flex={1}>
             <Text fontWeight="bold" fontSize="lg">
-              Legal
+              {t("footer.legal.title")}
             </Text>
             <VStack align="start" spacing={2}>
-              <Link href="#">Privacy Policy</Link>
-              <Link href="#">Terms of Service</Link>
-              <Link href="#">Warranty</Link>
+              <Link href="#">{t("footer.legal.privacyPolicy")}</Link>
+              <Link href="#">{t("footer.legal.termsOfService")}</Link>
+              <Link href="#">{t("footer.legal.warranty")}</Link>
             </VStack>
           </VStack>
         </Flex>
@@ -70,7 +73,7 @@ export const Footer = () => {
         <Divider my={6} borderColor="orange.300" />
 
         <Text textAlign="center" fontSize="sm">
-          © 2024 Kayan And Makan Construction. All Rights Reserved.
+          {t("footer.copyright")}
         </Text>
       </Container>
     </Box>

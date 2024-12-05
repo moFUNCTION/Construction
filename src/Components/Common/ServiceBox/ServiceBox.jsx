@@ -13,9 +13,18 @@ import {
 import { LazyLoadedImage } from "../LazyLoadedImage/LazyLoadedImage";
 import { useInView } from "framer-motion";
 import { AnimatedText } from "../AnimatedText/AnimatedText";
-export const ServiceBox = ({ image, title, description }) => {
+import { useTranslator } from "../../../Hooks/useTranslator/useTranslator";
+import { Link } from "react-router-dom";
+export const ServiceBox = ({
+  image,
+  title,
+  ViewMoreHref,
+  description,
+  hasViewPage,
+}) => {
   const ref = useRef();
   const inView = useInView(ref);
+  const { currentLanguage } = useTranslator();
   return (
     <Card
       transition="0.3s"
@@ -46,12 +55,14 @@ export const ServiceBox = ({ image, title, description }) => {
       <Divider color="gray.500" />
       <CardFooter>
         <ButtonGroup spacing="2">
-          <Button variant="outline" colorScheme="orange">
-            See Our Clients
+          <Button as={Link} to="/contact" variant="solid" colorScheme="orange">
+            {currentLanguage === "ar" ? "تواصل معنا" : "Contact Us"}
           </Button>
-          <Button variant="solid" colorScheme="orange">
-            Contact Us
-          </Button>
+          {hasViewPage && (
+            <Button as={Link} to={ViewMoreHref} colorScheme="orange">
+              {currentLanguage === "ar" ? "رؤية المزيد" : "View More"}
+            </Button>
+          )}
         </ButtonGroup>
       </CardFooter>
     </Card>

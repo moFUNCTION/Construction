@@ -11,12 +11,13 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 import { LazyLoadedImage } from "../../../Components/Common/LazyLoadedImage/LazyLoadedImage";
-import HeroImage from "../../../Assets/Hero/Image.jpg";
-import HeroImage2 from "../../../Assets/Hero/Image2.jpg";
-import HeroImage3 from "../../../Assets/Hero/Image3.jpg";
+import HeroImage from "../../../Assets/Hero/image4.jpg";
 import { AnimatedText } from "../../../Components/Common/AnimatedText/AnimatedText";
+import { useTranslator } from "../../../Hooks/useTranslator/useTranslator";
+import { Link } from "react-router-dom";
 export const Hero = () => {
   const [isPhoneQuery] = useMediaQuery("(max-width: 1334px)");
+  const { content } = useTranslator();
   return (
     <Flex
       alignItems="center"
@@ -24,86 +25,65 @@ export const Hero = () => {
       w="100%"
       pos="relative"
       overflow="hidden"
-      minH="calc(100vh - 100px)"
+      minH="calc(100vh - 95px)"
       flexWrap="wrap-reverse"
-      gap={{
-        base: "0",
-        lg: "4",
-      }}
+      gap="4"
       p="3"
+      bgColor="black"
+      zIndex="1"
     >
+      <LazyLoadedImage
+        transition="0.3s"
+        src={HeroImage}
+        w="100%"
+        pos="absolute"
+        h="100%"
+        inset="0"
+        ImageProps={{
+          objectFit: "cover",
+          filter: "saturate(0.6)",
+          opacity: 0.3,
+        }}
+        zIndex="-1"
+      />
       <Stack
-        alignItems={isPhoneQuery ? "center" : "start"}
+        justifyContent="center"
+        alignItems="center"
         gap="8"
         w="100%"
         maxW="700px"
       >
-        <AnimatedText isCentered={isPhoneQuery} spacing="10px">
+        <AnimatedText isCentered spacing="10px">
           <Heading
             textShadow="md"
-            color="orange.600"
+            color="white"
             size={{
               base: "xl",
               md: "2xl",
             }}
           >
-            Kayan & Makan Contracting Company
+            {content("hero.companyName")}
           </Heading>
         </AnimatedText>
-        <AnimatedText isCentered={isPhoneQuery} spacing="7px">
-          <Heading color="orange.700" size="md">
-            Innovative and Reliable Industrial Solutions
+        <AnimatedText isCentered spacing="7px">
+          <Heading color="gray.50" size="md">
+            {content("hero.slogan")}
           </Heading>
         </AnimatedText>
 
         <Button
           variant="outline"
-          bgColor="orange.600"
-          color="white"
-          colorScheme="orange"
           size="lg"
-          _hover={{
-            color: "orange.600",
-            bgColor: "white",
-          }}
           w="100%"
           maxW="500px"
           borderRadius="lg"
+          bgColor="white"
+          fontWeight="bold"
+          as={Link}
+          to="/contact"
         >
-          Conatct Us
+          {content("hero.buttonText")}
         </Button>
-      </Stack>
-      <Stack gap="4" w="100%" maxW="600px" h="500px">
-        <LazyLoadedImage
-          ImageProps={{
-            objectFit: "cover",
-          }}
-          w="100%"
-          borderRadius="2xl"
-          src={HeroImage3}
-          _hover={{
-            transform: "scale(1.05)",
-          }}
-          transition="0.3s"
-        />
-        <Flex gap="4">
-          <LazyLoadedImage
-            _hover={{
-              transform: "scale(1.05)",
-            }}
-            transition="0.3s"
-            borderRadius="2xl"
-            src={HeroImage}
-          />
-          <LazyLoadedImage
-            _hover={{
-              transform: "scale(1.05)",
-            }}
-            transition="0.3s"
-            borderRadius="2xl"
-            src={HeroImage2}
-          />
-        </Flex>
       </Stack>
     </Flex>
   );

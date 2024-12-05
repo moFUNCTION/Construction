@@ -10,6 +10,7 @@ import LogoImage from "../../../Assets/Logo/Logo2.png";
 // Asset Imports
 import AboutImage from "../../../Assets/About/About.jpg";
 import { ScrollParallaxWrapper } from "../../Common/ParrallexWrapper/ParrellexWrapper";
+import { useTranslator } from "../../../Hooks/useTranslator/useTranslator";
 
 // Framer Motion wrappers
 const MotionBox = motion(Box);
@@ -67,31 +68,10 @@ const ParallaxImage = ({ src, ...props }) => {
   );
 };
 
-const services = [
-  {
-    id: 1,
-    title: "Project Management",
-    description: "Ensuring seamless coordination from start to finish.",
-  },
-  {
-    id: 2,
-    title: "Procurement",
-    description: "Delivering top-quality materials and equipment.",
-  },
-  {
-    id: 3,
-    title: "Fabrication",
-    description: "Creating custom solutions to fit your project needs.",
-  },
-  {
-    id: 4,
-    title: "Safety Materials",
-    description: "Prioritizing the well-being of our workforce and clients.",
-  },
-];
-
 // Main About Component
 export const About = () => {
+  const { content } = useTranslator();
+  const services = content("about.services", { returnObjects: true });
   return (
     <Stack gap="20" alignItems="center" px={[4, 6, 8]} py={[8, 10, 12]}>
       {/* Section Title */}
@@ -103,7 +83,7 @@ export const About = () => {
             color="orange.600"
             textAlign="center"
           >
-            About Us
+            {content("about.sectionTitle")}
           </Heading>
         </AnimatedText>
       </CenteredTextWithLines>
@@ -118,19 +98,14 @@ export const About = () => {
         <Stack gap="4" maxW="600px">
           <AnimatedText spacing="5px">
             <Heading color="orange.800" size="md">
-              At Kayan & Makan Contracting Company, we specialize in providing
-              innovative and high-quality industrial services tailored to meet
-              the needs of various industries. Established in Jubail, Saudi
-              Arabia, we have built a reputation for excellence in plant
-              construction, maintenance, and delivering superior equipment with
-              professional dedication.
+              {content("about.intro")}
             </Heading>
           </AnimatedText>
 
           <Divider />
           <AnimatedText spacing="5px">
             <Heading color="orange.700" size="md">
-              Our range of services includes:
+              {content("about.servicesTitle")}
             </Heading>
           </AnimatedText>
 
@@ -158,7 +133,7 @@ export const About = () => {
           })}
         </Stack>
 
-        <ParallaxImage src={AboutImage} maxW="500px" width="100%" />
+        <ParallaxImage src={AboutImage} maxW="500px" h="650px" width="100%" />
       </Flex>
     </Stack>
   );

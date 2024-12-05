@@ -1,39 +1,37 @@
 export const Links = [
   {
     href: "/",
-    title: "Home",
+    title: {
+      en: "Home",
+      ar: "الرئيسية",
+    },
   },
   {
     href: "/about",
-    title: "about",
+    title: {
+      en: "About",
+      ar: "من نحن",
+    },
   },
-
   {
     href: "/services",
-    title: "services",
+    title: {
+      en: "Services",
+      ar: "الخدمات",
+    },
   },
   {
     href: "/contact",
-    title: "contact",
+    title: {
+      en: "Contact",
+      ar: "اتصل بنا",
+    },
   },
   {
     href: "/vision",
-    title: "Our Vision",
-  },
-  {
-    href: "/project-management",
-    title: `Project Management`,
-  },
-  {
-    href: "/project-support-services",
-    title: `Project support Service`,
-  },
-  {
-    href: "/operations-maintenance-services",
-    title: `Operations & Maintenance Services`,
-  },
-  {
-    href: "/fire-protection-services",
-    title: `Fire Protection Services`,
+    title: {
+      en: "Our Vision",
+      ar: "رؤيتنا",
+    },
   },
 ];

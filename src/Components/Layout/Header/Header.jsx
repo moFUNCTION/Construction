@@ -4,6 +4,7 @@ import {
   IconButton,
   Spacer,
   useDisclosure,
+  useMediaQuery,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { Logo } from "../../Common/Logo/Logo";
@@ -12,6 +13,11 @@ import { MdFacebook, MdWhatsapp, MdPhone } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Links } from "./Links";
 import { SlideMenu } from "./SlideMenu";
+import { useTranslator } from "../../../Hooks/useTranslator/useTranslator";
+import { LazyLoadedImage } from "../../Common/LazyLoadedImage/LazyLoadedImage";
+import ArabicIcon from "../../../Assets/Icons/arabic.png";
+import EnglishIcon from "../../../Assets/Icons/english.png";
+
 const LinkButton = ({ children, ...rest }) => {
   return (
     <Button
@@ -84,6 +90,8 @@ function useScrollDirection() {
 export const Header = () => {
   const scrollDirection = useScrollDirection();
   const { isOpen, onToggle, onClose } = useDisclosure();
+  const { changeLanguage, content, currentLanguage } = useTranslator();
+  const [isPhoneQuery] = useMediaQuery("(max-width: 900px)");
   return (
     <>
       <SlideMenu isOpen={isOpen} onClose={onClose} />
@@ -105,6 +113,10 @@ export const Header = () => {
         transition="0.3s"
         sx={{
           translate: scrollDirection === "down" ? "0% -100%" : "0% 0%",
+          direction: "ltr !important",
+          "*": {
+            direction: "ltr !important",
+          },
         }}
       >
         <Logo w="180px" />
@@ -114,16 +126,28 @@ export const Header = () => {
             xl: "flex",
           }}
           gap="4"
+          flexDir={currentLanguage === "ar" ? "row-reverse" : "row"}
         >
-          {Links.slice(0, 4).map((link) => {
+          {Links.slice(0, 3).map((link) => {
             return (
               <LinkButton key={link.title} to={link.href} size="lg">
-                {link.title}
+                {currentLanguage === "ar" ? link.title.ar : link.title.en}
               </LinkButton>
             );
           })}
         </Flex>
-        <Flex alignItems="center" gap="3">
+        <Flex justify="center" wrap="wrap" alignItems="center" gap="3">
+          <Button
+            size={{
+              base: "sm",
+              lg: "lg",
+              md: "md",
+              sm: "sm",
+            }}
+            colorScheme="orange"
+          >
+            {content("header.contactUs")}
+          </Button>
           <IconButton
             colorScheme="orange"
             variant="outline"
@@ -179,17 +203,64 @@ export const Header = () => {
           >
             <RxHamburgerMenu />
           </IconButton>
-          <Button
-            size={{
-              base: "sm",
-              lg: "lg",
-              md: "md",
-              sm: "sm",
-            }}
-            colorScheme="orange"
-          >
-            Contact Us
-          </Button>
+
+          {currentLanguage === "ar" ? (
+            <Button
+              size={{
+                base: "sm",
+                lg: "lg",
+                md: "md",
+                sm: "sm",
+              }}
+              onClick={() => changeLanguage("en")}
+              gap="3"
+              paddingBlock="3"
+            >
+              الانجليزية
+              <LazyLoadedImage
+                sx={
+                  isPhoneQuery
+                    ? {
+                        w: "20px",
+                        h: "20px",
+                      }
+                    : {
+                        w: "25px",
+                        h: "25px",
+                      }
+                }
+                src={EnglishIcon}
+              />
+            </Button>
+          ) : (
+            <Button
+              size={{
+                base: "sm",
+                lg: "lg",
+                md: "md",
+                sm: "sm",
+              }}
+              onClick={() => changeLanguage("ar")}
+              gap="3"
+              paddingBlock="3"
+            >
+              Arabic
+              <LazyLoadedImage
+                sx={
+                  isPhoneQuery
+                    ? {
+                        w: "20px",
+                        h: "20px",
+                      }
+                    : {
+                        w: "25px",
+                        h: "25px",
+                      }
+                }
+                src={ArabicIcon}
+              />
+            </Button>
+          )}
         </Flex>
       </Flex>
     </>
